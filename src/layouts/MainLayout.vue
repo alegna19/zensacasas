@@ -12,14 +12,13 @@
         />
         <!-- :show-if-above="false" to prevent drawer to open when resizing -->
         <q-toolbar-title>
-          <img src="~assets/images/logo5.png" class="vertical-middle" 
-            :class="{'logo-small': scrollPosition > 200, 'logo1': scrollPosition < 201} ">
+          <img src="~assets/images/logo4.png" class="logo1 vertical-middle">
         </q-toolbar-title>
 
         <q-tabs v-model="tab" shrink class="hide-mobile-only" inline-label>
           <q-route-tab name="home" label="Inicio" clickable to="/" exact/>
           <q-route-tab name="aboutus" label="Quienes Somos" clickable to="/about" exact/>
-          <q-btn-dropdown stretch flat icon="las la-campground" label="Venta Inmuebles" 
+          <q-btn-dropdown stretch flat icon="las la-campground" label="Venta Inmuebles"
             v-model="menuProducts" @mouseover.native="menuProducts = true">
             <q-list>
               <q-item clickable to="" v-close-popup>
@@ -129,7 +128,7 @@
     </q-page-container>
 
     <footer>
-      <q-parallax src="" :speed="2.6">
+      <div class="footer-bg">
         <div class="row foot-content">
           <div class="col-12 col-sm-4 hide-mobile-only">
             <div style="width:280px; margin:0 auto">
@@ -138,21 +137,30 @@
                 <table>
                   <tr>
                     <td class="q-pr-md"><i class="fas fa-map-pin fa-3x"></i></td>
-                    <td>954 Lexington Avenue <br>
-                      Suite 1006 <br>
-                      New York, NY 10021 <br>
+                    <td>
+                      <p class="text-white">
+                        954 Lexington Avenue <br>
+                        Suite 1006 <br>
+                        New York, NY 10021
+                      </p>
                     </td>
                   </tr><br>
                   <tr>
                     <td class="q-pr-md"><i class="fas fa-phone fa-2x"></i></td>
-                    <td>212-624-5943 <br>
-                      fax 212-288-4826
+                    <td>
+                      <p class="text-white">
+                        212-624-5943 <br>
+                        fax 212-288-4826
+                      </p>
                     </td>
                   </tr><br>
                   <tr>
                     <td class="q-pr-md"><i class="fas fa-envelope fa-2x"></i></td>
-                    <td>sales@euscorp.com <br>
-                      support@euscorp.com
+                    <td>
+                      <p class="text-white">
+                        sales@euscorp.com <br>
+                        support@euscorp.com
+                      </p>
                     </td>
                   </tr>
                 </table>
@@ -177,7 +185,7 @@
             </div>
           </div>
         </div>
-      </q-parallax>
+      </div>
     </footer>
 
   </q-layout>
@@ -195,11 +203,6 @@ export default {
     }
   },
   methods: {
-    goto(refName) {
-    	var element = this.$els[refName];
-      var top = element.offsetTop;
-      window.scrollTo(0, top);
-    },
     updateScroll() {
       this.scrollPosition = window.scrollY
     }
@@ -210,19 +213,26 @@ export default {
   destroy() {
     window.removeEventListener('scroll', this.updateScroll)
   },
-  
+
 }
 </script>
 
 <style lang="stylus" scoped>
   body, div
     color $primary
+  .logo1
+    height 80px
+    position fixed
+    top 4px
+    left 40px
+    z-index 2
   .foot-content
     width 90%
   .router-link:hover
     color $secondary
   .q-tab__label
     font-family 'Baloo 2' !important
-
-
+  .footer-bg
+    background radial-gradient(ellipse at top, #c4d600, #000000)
+    width 100%
 </style>

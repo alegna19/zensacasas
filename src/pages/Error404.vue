@@ -3,7 +3,7 @@
     <p>
       <img
         src="~assets/images/sad.png"
-        style="width:500vw;max-width:600px;"
+        style="width:800vw;max-width:900px;"
       >
     </p>
     <p class="text-faded">Pagina no existe <strong>(404)</strong></p>
