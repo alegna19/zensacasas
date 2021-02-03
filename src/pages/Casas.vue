@@ -1,23 +1,16 @@
 <template>
-  <div class="fixed-center text-center">
-    <p>
-      <img
-        src="~assets/images/sad.png"
-        style="width:800vw;max-width:900px;"
-      >
-    </p>
-    <p class="text-faded">Pagina no existe <strong>(404)</strong></p>
-    <q-btn
-      color="secondary"
-      style="width:200px;"
-      to="/"
-      label="Volver"
-    />
-  </div>
+
+    <div>
+
+      <h1>PEPE EL POLLO</h1>
+    <h1>PEPE EL POLLO</h1>
+    <h1>PEPE EL POLLO</h1>
+    <h1>PEPE EL POLLO</h1>
+    <h1>PEPE EL POLLO</h1><h1>PEPE EL POLLO</h1>
+    </div>
+
 </template>
 
 <script>
-export default {
-  name: 'Error404'
-}
+
 </script>
