@@ -76,26 +76,34 @@
     <div class="row q-pa-xl icon-images align-center">
       <div class="col-4">
         <img src="~assets/icons/hands.png" alt="confianza">
-        <p>hola amigos como estan</p>
+        <p>Confianza y Seguridad <br>
+         en nuestros servicios</p>
       </div>
       <div class="col-4">
         <img src="~assets/icons/medal.png" alt="calidad">
+        <p>Calidad y Garantia</p>
       </div>
       <div class="col-4">
         <img src="~assets/icons/family.png" alt="familia feliz">
+        <p>Familias Felices</p>
       </div>
     </div>
 
     <!-- general info -->
-    <div class="row grey-bg q-pa-xl">
+    <div class="row grey-bg q-pa-xl " >
       <div class="col-6">
-        <h4>POLLO</h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, odit excepturi. Doloremque velit soluta aliquam ullam accusamus esse nihil cum qui quibusdam, adipisci voluptates. Sequi vel laudantium perspiciatis quisquam provident!
+        <h4>Quienes Somos</h4>
+        <p class="q-mt-lg q-pr-md text-justify">
+          Somos una empresa del sector inmobiliario que ofrece informacion y asistencia en la compra y venta de bienes inmuebles,
+          Casas, Apartamentos, Fincas y Terrenos. En Zensacasas estamos comprometidos con la calidad, seguridad y cumplimiento de
+          nuestros servicios, cubriendo las necesidades de nuestros clientes en su busqueda de su siguiente gran negocio.
         </p>
+        <br>
+        <h5>Llamanos Ahora</h5>
+        <p><i class="las la-phone"></i> +57 3162747014 </p>           
       </div>
-      <div class="col-6">
-        <img src="https://picsum.photos/640/400" alt="negocio">
+      <div class="col-6 text-center">
+        <img src="~assets/images/nosotros.jpg" alt="negocio">
       </div>
     </div>
 
@@ -104,29 +112,29 @@
       <div class="col-12 align-center">
         <h4>Venta Inmuebles</h4>
       </div>
-      <div class="col-6 q-pa-md">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+      <div class="col-12 col-sm-6 q-pa-md">
+        <q-img src="~assets/images/casa.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" color="positive" label="Casas"></q-btn>
           </div>
         </q-img>
       </div>
-      <div class="col-6 q-pa-md">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+      <div class="col-12 col-sm-6 q-pa-md">
+        <q-img src="~assets/images/apta.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" color="positive" label="Apartamentos"></q-btn>
           </div>
         </q-img>
       </div>
-      <div class="col-6 q-pa-md">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+      <div class="col-12 col-sm-6 q-pa-md">
+        <q-img src="~assets/images/finca.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" color="positive" label="Fincas"></q-btn>
           </div>
         </q-img>
       </div>
-      <div class="col-6 q-pa-md">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+      <div class="col-12 col-sm-6 q-pa-md">
+        <q-img src="~assets/images/terreno.jpeg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" color="positive" label="Terrenos"></q-btn>
           </div>
@@ -137,13 +145,13 @@
     <!-- features -->
     <div class="row grey-bg q-pa-xl">
       <div class="col-12 align-center">
-        <h4>PEPE</h4>
+        <h4>Caracteristicas de Nuestro Servicio</h4>
         <p>
-          <i class="las la-check"></i> erf dcsdc s dcv sdvc sdv csdvsd <br>
-          <i class="las la-check"></i> erf dcsdc s dcv sdvc sdv csdvsd <br>
-          <i class="las la-check"></i> erf dcsdc s dcv sdvc sdv csdvsd <br>
-          <i class="las la-check"></i> erf dcsdc s dcv sdvc sdv csdvsd <br>
-          <i class="las la-check"></i> erf dcsdc s dcv sdvc sdv csdvsd <br>
+          <i class="las la-check"></i> Servicio con calidad <br>
+          <i class="las la-check"></i> Transparencia e Integridad <br>
+          <i class="las la-check"></i> Satisfaccion de nuestros clientes <br>
+          <i class="las la-check"></i> Comodidad en tu hogar <br>
+          <i class="las la-check"></i> Confianza y Responsabilidad en nuestros servicios <br>
         </p>
       </div>
     </div>
@@ -225,6 +233,7 @@ export default {
       transform translate(-90px, 0%)
     100%
       transform translate(85px, 0%)
-  .q-img__content > div
-    background: rgba(0,0,0,0.4);
+
+  .img-inmuebles
+    height 400px
 </style>

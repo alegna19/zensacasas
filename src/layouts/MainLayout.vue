@@ -21,7 +21,7 @@
           <q-btn-dropdown stretch flat icon="las la-campground" label="Venta Inmuebles"
             v-model="menuProducts" @mouseover.native="menuProducts = true">
             <q-list>
-              <q-item clickable to="" v-close-popup>
+              <q-item clickable to="casas" v-close-popup>
                 <q-item-section avatar >
                   <q-avatar icon="las la-home" color="positive" text-color="white" />
                 </q-item-section>
@@ -31,7 +31,7 @@
                 </q-item-section>
               </q-item>
 
-              <q-item clickable to="" v-close-popup>
+              <q-item clickable to="apartamentos" v-close-popup>
                 <q-item-section avatar>
                   <q-avatar icon="las la-building" color="positive" text-color="white" />
                 </q-item-section>
@@ -41,7 +41,7 @@
                 </q-item-section>
               </q-item>
 
-              <q-item clickable to="" v-close-popup>
+              <q-item clickable to="fincas" v-close-popup>
                 <q-item-section avatar>
                   <q-avatar icon="las la-warehouse" color="positive" text-color="white" />
                 </q-item-section>
@@ -51,7 +51,7 @@
                 </q-item-section>
               </q-item>
 
-              <q-item clickable to="" v-close-popup>
+              <q-item clickable to="terrenos" v-close-popup>
                 <q-item-section avatar>
                   <q-avatar icon="las la-mountain" color="positive" text-color="white" />
                 </q-item-section>
@@ -62,7 +62,7 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
-          <q-route-tab name="contact" icon="fas fa-paper-plane" label="Contactenos" clickable to="" exact/>
+          <q-route-tab name="contact" icon="fas fa-paper-plane" label="Contactenos" clickable to="contactenos" exact/>
         </q-tabs>
         <div class="show-mobile-only">
           <q-btn flat round dense icon="fas fa-home" to="/" class="q-mr-md" />
@@ -139,9 +139,8 @@
                     <td class="q-pr-md"><i class="fas fa-map-pin fa-3x"></i></td>
                     <td>
                       <p class="text-white">
-                        954 Lexington Avenue <br>
-                        Suite 1006 <br>
-                        New York, NY 10021
+                        Colombia <br>
+                         <br>
                       </p>
                     </td>
                   </tr><br>
@@ -149,8 +148,8 @@
                     <td class="q-pr-md"><i class="fas fa-phone fa-2x"></i></td>
                     <td>
                       <p class="text-white">
-                        212-624-5943 <br>
-                        fax 212-288-4826
+                        +44 7984436635 <br>
+                        +57 3162747014
                       </p>
                     </td>
                   </tr><br>
@@ -158,8 +157,7 @@
                     <td class="q-pr-md"><i class="fas fa-envelope fa-2x"></i></td>
                     <td>
                       <p class="text-white">
-                        sales@euscorp.com <br>
-                        support@euscorp.com
+                        senzacasas@gmail.com <br>
                       </p>
                     </td>
                   </tr>
@@ -169,17 +167,16 @@
           </div>
           <div style="width:320px; margin:0 auto">
             <div class="col-12 col-sm-4">
-              <h4 class="text-white small-margin">EUS Corp</h4>
-              <p class="text-white">© 2019 All Rights Reserved <br>
-                Connecting the Dots in Communications!
+              <h4 class="text-white small-margin">Zensacasas</h4>
+              <p class="text-white">© 2021 Derechos Reservados <br>
               </p>
-              <router-link to="/privacy"><p class="text-white"><u>Privacy Policy</u></p></router-link>
+              <!-- <router-link to="/privacy"><p class="text-white"><u>Privado</u></p></router-link> -->
             </div>
             <img src="" style="height:60px; width:auto">
           </div>
           <div style="width:320px; margin:0 auto">
             <div class="col-12 col-sm-4">
-              <h4 class="text-white small-margin">Follow us</h4>
+              <h4 class="text-white small-margin">Siguenos</h4>
               <a href="https://twitter.com/eusnetworks" target="_blank" class="q-pr-md"><i class="fab fa-twitter-square fa-3x text-white"></i></a>
               <a href="https://www.linkedin.com/company/eus-networks" target="_blank"><i class="fab fa-linkedin fa-3x text-white"></i></a>
             </div>

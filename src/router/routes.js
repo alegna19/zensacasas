@@ -13,6 +13,26 @@ const routes = [
   {
     path: '*',
     component: () => import('pages/Error404.vue')
+  },
+  {
+    path: '/casas',
+    component: () => import('pages/Casas.vue')
+  },
+  {
+    path: '/apartamentos',
+    component: () => import('pages/Apartamentos.vue')
+  },
+  {
+    path: '/fincas',
+    component: () => import('pages/Fincas.vue')
+  },
+  {
+    path: '/terrenos',
+    component: () => import('pages/Terrenos.vue')
+  },
+  {
+    path: '/contactenos',
+    component: () => import('pages/Contactenos.vue')
   }
 ]
 
