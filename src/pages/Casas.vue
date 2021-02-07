@@ -1,14 +1,12 @@
 <template>
   <q-page>
-
     <div class="q-mt-xl">
 
-      <div v-for="(item, index) in gatos" :key="index">
+      <div v-for="(item, index) in inmuebles" :key="index">
         <div class="row">
           <div class="col-4">
             <p>
-              nombre: {{ item.nombre }}
-              apellido: {{ item.apellido }}
+              ciudad: {{ item.ciudad }}
             </p>
           </div>
           <div class="col-8">
@@ -20,33 +18,20 @@
       </div>
 
     </div>
-
-
-
   </q-page>
 </template>
 
 <script>
-
+import Inmuebles from '../data/inmuebles'
 export default {
   data() {
     return {
-      gatos: [
-        {
-          "nombre": "nieve",
-          "apellido": "gomez",
-          "imagenes": [
-            { "imagen": "imagen1.jpg" },
-            { "imagen": "imagen2.jpg" },
-            { "imagen": "imagen3.jpg" },
-            { "imagen": "imagen4.jpg" }
-          ]
-        },
-        { "nombre": "popcorn", "apellido": "lopez" },
-        { "nombre": "loki", "apellido": "perez" },
-      ]
     }
   },
+
+  components: {
+    Inmuebles
+  }
 }
 
 </script>

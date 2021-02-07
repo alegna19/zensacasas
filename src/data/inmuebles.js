@@ -7,7 +7,7 @@ export default [
         "id": 1,
         "ciudad": "Pereira",
         "imagenes": [
-          { "imagen": "casas1.png" },
+          { "imagen": "casas1" },
           { "imagen": "casas1.png" },
           { "imagen": "casas1.png" },
           { "imagen": "casas1.png" },
@@ -16,7 +16,7 @@ export default [
           { "imagen": "casas1.png" }
         ],
         "metros": 23,
-        "precio": 400000000,
+        "precio": 400000,
         "detalle": ""
       },
       {

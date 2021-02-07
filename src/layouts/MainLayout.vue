@@ -12,7 +12,7 @@
         />
         <!-- :show-if-above="false" to prevent drawer to open when resizing -->
         <q-toolbar-title>
-          <img src="~assets/images/logo4.png" class="logo1 vertical-middle">
+          <img src="~assets/images/logo1.png" class="logo1 vertical-middle">
         </q-toolbar-title>
 
         <q-tabs v-model="tab" shrink class="hide-mobile-only" inline-label>

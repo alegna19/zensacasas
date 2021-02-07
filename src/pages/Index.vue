@@ -22,7 +22,7 @@
             <br><br>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide :name="2" img-src="~assets/images/house4.jpeg">
+        <q-carousel-slide :name="2" img-src="~assets/images/house3.jpeg">
           <div class="front-text">
             <h5 class="text-primary">VENTA DE FINCAS Y TERRENOS</h5>
             <p class="text-white">En el Eje Cafetero, revise nuestros inmuebles ssss </p>
@@ -31,7 +31,7 @@
             <br><br>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide :name="3" img-src="~assets/images/house5.jpg">
+        <q-carousel-slide :name="3" img-src="~assets/images/house4.jpg">
           <div class="front-text">
             <h5 class="text-primary">VENTA DE APARTAMENTOS</h5>
             <p class="text-white">En el Eje Cafetero, revise nuestros inmuebles ssss </p>
