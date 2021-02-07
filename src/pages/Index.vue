@@ -90,7 +90,7 @@
     </div>
 
     <!-- general info -->
-    <div class="row grey-bg q-pa-xl " >
+    <div class="row grey-bg q-pa-xl" id="aboutus">
       <div class="col-6">
         <h4>Quienes Somos</h4>
         <p class="q-mt-lg q-pr-md text-justify">
@@ -98,9 +98,8 @@
           Casas, Apartamentos, Fincas y Terrenos. En Zensacasas estamos comprometidos con la calidad, seguridad y cumplimiento de
           nuestros servicios, cubriendo las necesidades de nuestros clientes en su busqueda de su siguiente gran negocio.
         </p>
-        <br>
         <h5>Llamanos Ahora</h5>
-        <p><i class="las la-phone"></i> +57 3162747014 </p>           
+        <p><i class="las la-phone"></i> +57 3162747014 </p>
       </div>
       <div class="col-6 text-center">
         <img src="~assets/images/nosotros.jpg" alt="negocio">

@@ -17,7 +17,7 @@
 
         <q-tabs v-model="tab" shrink class="hide-mobile-only" inline-label>
           <q-route-tab name="home" label="Inicio" clickable to="/" exact/>
-          <q-route-tab name="aboutus" label="Quienes Somos" clickable to="/about" exact/>
+          <q-route-tab name="aboutus" label="Quienes Somos" clickable to="/#aboutus" exact/>
           <q-btn-dropdown stretch flat icon="las la-campground" label="Venta Inmuebles"
             v-model="menuProducts" @mouseover.native="menuProducts = true">
             <q-list>
