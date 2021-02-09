@@ -1,23 +1,89 @@
 <template>
-  <div class="fixed-center text-center">
-    <p>
-      <img
-        src="~assets/images/sad.png"
-        style="width:800vw;max-width:900px;"
-      >
-    </p>
-    <p class="text-faded">Pagina no existe <strong>(404)</strong></p>
-    <q-btn
-      color="secondary"
-      style="width:200px;"
-      to="/"
-      label="Volver"
-    />
-  </div>
+  <q-page>
+    <div class="countainer"></div>
+    <div class="q-ma-xl inmuebles">
+      <h3 class="titulo">Ventas de Fincas</h3>
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <div class="custom-card">
+            <h5>Finca en Palmira</h5>
+            <p>Ubicada en el condominio las Delicias, tiene una extensión territorial de 1000 &#x33A1; con una construcción de 216 &#x33A1; y cuenta con lo siguiente:</p>
+            <table class="q-mt-md">
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Cocina Tipo Americana</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Tanque Reserva De Agua</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Parqueadero Para Carros</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Pozo Séptico</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Area 1000 &#x33A1;</p> </td>
+              </tr>
+            </table>
+            <hr class="hr-custom q-ma-md">
+            <p>Contactenos para mas detalles: <br>
+              +57 3162747014 <br>
+              +44 7984436635
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8">
+          <Carousel>
+            <q-carousel-slide :name="1" img-src="/statics/images/fincas/palmira/1/image1.jpeg" />
+            <q-carousel-slide :name="2" img-src="/statics/images/fincas/palmira/1/image2.jpeg" />
+            <q-carousel-slide :name="3" img-src="/statics/images/fincas/palmira/1/image3.jpeg" />
+            <q-carousel-slide :name="4" img-src="/statics/images/fincas/palmira/1/image4.jpeg" />
+            <q-carousel-slide :name="5" img-src="/statics/images/fincas/palmira/1/image5.jpeg" />
+            <q-carousel-slide :name="6" img-src="/statics/images/fincas/palmira/1/image6.jpeg" />
+            <q-carousel-slide :name="7" img-src="/statics/images/fincas/palmira/1/image7.jpeg" />
+            <q-carousel-slide :name="8" img-src="/statics/images/fincas/palmira/1/image8.jpeg" />
+            <q-carousel-slide :name="9" img-src="/statics/images/fincas/palmira/1/image9.jpeg" />
+          </Carousel>
+        </div>
+      </div>
+    </div>
+  </q-page>
 </template>
 
 <script>
+import Carousel from '../components/Carousel.vue'
 export default {
-  name: 'Error404'
+  data() {
+    return {
+    }
+  },
+  components: {
+    Carousel
+  }
 }
 </script>
+
+<style lang="stylus" scoped>
+.inmuebles
+  margin-top 80px
+.custom-card
+  border-radius 8px
+  background #f5f8fa
+  box-shadow 0 0 10px rgba(0, 0, 0, 0.3)
+  padding 20px
+  margin-left 10px
+  margin-right 10px
+.titulo
+  text-align: center
+  margin-bottom 70px 
+p, .fa-check
+  margin 0
+  font-size 18px
+.fa-check
+  margin-right 10px
+</style>

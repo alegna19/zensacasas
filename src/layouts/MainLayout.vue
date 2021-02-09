@@ -129,60 +129,20 @@
 
     <footer>
       <div class="footer-bg">
-        <div class="row foot-content">
-          <div class="col-12 col-sm-4 hide-mobile-only">
-            <div style="width:280px; margin:0 auto">
-              <h4 class="text-white small-margin">EUS Contact</h4>
-              <p class="text-white">
-                <table>
-                  <tr>
-                    <td class="q-pr-md"><i class="fas fa-map-pin fa-3x"></i></td>
-                    <td>
-                      <p class="text-white">
-                        Colombia <br>
-                         <br>
-                      </p>
-                    </td>
-                  </tr><br>
-                  <tr>
-                    <td class="q-pr-md"><i class="fas fa-phone fa-2x"></i></td>
-                    <td>
-                      <p class="text-white">
-                        +44 7984436635 <br>
-                        +57 3162747014
-                      </p>
-                    </td>
-                  </tr><br>
-                  <tr>
-                    <td class="q-pr-md"><i class="fas fa-envelope fa-2x"></i></td>
-                    <td>
-                      <p class="text-white">
-                        senzacasas@gmail.com <br>
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </p>
-            </div>
-          </div>
-          <div style="width:320px; margin:0 auto">
-            <div class="col-12 col-sm-4">
-              <h4 class="text-white small-margin">Zensacasas</h4>
-              <p class="text-white">© 2021 Derechos Reservados <br>
-              </p>
-              <!-- <router-link to="/privacy"><p class="text-white"><u>Privado</u></p></router-link> -->
-            </div>
-            <img src="" style="height:60px; width:auto">
-          </div>
-          <div style="width:320px; margin:0 auto">
-            <div class="col-12 col-sm-4">
-              <h4 class="text-white small-margin">Siguenos</h4>
-              <a href="https://twitter.com/eusnetworks" target="_blank" class="q-pr-md"><i class="fab fa-twitter-square fa-3x text-white"></i></a>
-              <a href="https://www.linkedin.com/company/eus-networks" target="_blank"><i class="fab fa-linkedin fa-3x text-white"></i></a>
-            </div>
-          </div>
+              <div class="col-12 col-sm-4 hide-mobile-only">
+                  <h4>Mantente en Contacto</h4>
+                  <p class="text-white">Colombia <br></p>
+                  <i class="fas fa-map-pin fa-3x"></i>
+                  <p class="text-white">Nuestros Telefonos <br>
+                  +57 3162747014 <br>
+                  +44 7984436635</p>
+                  <i class="fas fa-phone fa-2x"></i>
+              </div>
+              <div>Columna2</div>
         </div>
-      </div>
+      <div class="grid-container">
+
+</div>
     </footer>
 
   </q-layout>
@@ -230,6 +190,10 @@ export default {
   .q-tab__label
     font-family 'Baloo 2' !important
   .footer-bg
+    text-align center
     background radial-gradient(ellipse at top, #c4d600, #000000)
     width 100%
+    display grid
+    grid-gap 5px
+    grid-template-columns 50% 50%
 </style>

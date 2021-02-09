@@ -146,11 +146,11 @@
       <div class="col-12 align-center">
         <h4>Caracteristicas de Nuestro Servicio</h4>
         <p>
-          <i class="las la-check"></i> Servicio con calidad <br>
-          <i class="las la-check"></i> Transparencia e Integridad <br>
-          <i class="las la-check"></i> Satisfaccion de nuestros clientes <br>
-          <i class="las la-check"></i> Comodidad en tu hogar <br>
-          <i class="las la-check"></i> Confianza y Responsabilidad en nuestros servicios <br>
+          <i class="fas fa-check" style="background-color=#c4d600"></i> Servicio con calidad <br>
+          <i class="fas fa-check"></i> Transparencia e Integridad <br>
+          <i class="fas fa-check"></i> Satisfaccion de nuestros clientes <br>
+          <i class="fas fa-check"></i> Comodidad en tu hogar <br>
+          <i class="fas fa-check"></i> Confianza y Responsabilidad en nuestros servicios <br>
         </p>
       </div>
     </div>

@@ -2,6 +2,7 @@
   <q-page>
     <div class="countainer"></div>
     <div class="q-ma-xl inmuebles">
+      <h3 class="titulo">Casas en Venta</h3>
       <div class="row">
         <div class="col-12 col-sm-4">
           <div class="custom-card">
@@ -26,10 +27,6 @@
               </tr>
               <tr>
                 <td><i class="fas fa-check"></i> </td>
-                <td><p>3 habitaciones</p> </td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-check"></i> </td>
                 <td><p>Area 104 &#x33A1;</p> </td>
               </tr>
             </table>
@@ -45,6 +42,13 @@
             <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/1/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/1/image2.jpeg" />
             <q-carousel-slide :name="3" img-src="/statics/images/casas/palmira/1/image3.jpeg" />
+            <q-carousel-slide :name="4" img-src="/statics/images/casas/palmira/1/image4.jpeg" />
+            <q-carousel-slide :name="5" img-src="/statics/images/casas/palmira/1/image5.jpeg" />
+            <q-carousel-slide :name="6" img-src="/statics/images/casas/palmira/1/image6.jpeg" />
+            <q-carousel-slide :name="7" img-src="/statics/images/casas/palmira/1/image7.jpeg" />
+            <q-carousel-slide :name="8" img-src="/statics/images/casas/palmira/1/image8.jpeg" />
+            <q-carousel-slide :name="9" img-src="/statics/images/casas/palmira/1/image9.jpeg" />
+            <q-carousel-slide :name="10" img-src="/statics/images/casas/palmira/1/image10.jpeg" />
           </Carousel>
         </div>
       </div>
@@ -52,7 +56,7 @@
         <div class="col-12 col-sm-4">
           <div class="custom-card">
             <h5>Casa en Palmira</h5>
-            <p>Ubicada en medio de dos centros comerciales, tiene una extensión territorial de 104 &#x33A1; y cuenta con lo siguiente:</p>
+            <p>Ubicada en Cr3 # 1-56 Barrio el centro con 4,30 metros de frente y fondo 12,80 y cuenta con lo siguiente:</p>
             <table class="q-mt-md">
               <tr>
                 <td><i class="fas fa-check"></i> </td>
@@ -60,15 +64,15 @@
               </tr>
               <tr>
                 <td><i class="fas fa-check"></i> </td>
-                <td><p>1 Cocina Integral</p> </td>
+                <td><p>2 Cocinas</p> </td>
               </tr>
               <tr>
                 <td><i class="fas fa-check"></i> </td>
                 <td><p>1 Comedor</p> </td>
               </tr>
-              <tr>
+               <tr>
                 <td><i class="fas fa-check"></i> </td>
-                <td><p>3 habitaciones</p> </td>
+                <td><p>Sala en la parte superior</p> </td>
               </tr>
               <tr>
                 <td><i class="fas fa-check"></i> </td>
@@ -76,7 +80,11 @@
               </tr>
               <tr>
                 <td><i class="fas fa-check"></i> </td>
-                <td><p>Area 104 &#x33A1;</p> </td>
+                <td><p>2 Baños</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>1 Patio</p> </td>
               </tr>
             </table>
             <hr class="hr-custom q-ma-md">
@@ -88,9 +96,56 @@
         </div>
         <div class="col-12 col-sm-8">
           <Carousel>
-            <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/1/image1.jpeg" />
-            <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/1/image2.jpeg" />
-            <q-carousel-slide :name="3" img-src="/statics/images/casas/palmira/1/image3.jpeg" />
+            <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/2/image1.jpeg" />
+            <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/2/image2.jpeg" />
+            <q-carousel-slide :name="3" img-src="/statics/images/casas/palmira/2/image3.jpeg" />
+            <q-carousel-slide :name="4" img-src="/statics/images/casas/palmira/2/image4.jpeg" />
+            <q-carousel-slide :name="5" img-src="/statics/images/casas/palmira/2/image5.jpeg" />
+            <q-carousel-slide :name="6" img-src="/statics/images/casas/palmira/2/image6.jpeg" />
+            <q-carousel-slide :name="7" img-src="/statics/images/casas/palmira/2/image7.jpeg" />
+            <q-carousel-slide :name="8" img-src="/statics/images/casas/palmira/2/image8.jpeg" />
+            <q-carousel-slide :name="9" img-src="/statics/images/casas/palmira/2/image9.jpeg" />
+            <q-carousel-slide :name="10" img-src="/statics/images/casas/palmira/2/image10.jpeg" />
+            <q-carousel-slide :name="11" img-src="/statics/images/casas/palmira/2/image11.jpeg" />
+            <q-carousel-slide :name="12" img-src="/statics/images/casas/palmira/2/image12.jpeg" />
+
+          </Carousel>
+        </div>
+      </div>
+            <div class="row">
+        <div class="col-12 col-sm-4">
+          <div class="custom-card">
+            <h5>Casa en Pereira</h5>
+            <p>Ubicada en Pereira y cuenta con lo siguiente:</p>
+            <table class="q-mt-md">
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Cocina Integral</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>Sala Comedor</p> </td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-check"></i> </td>
+                <td><p>3 habitaciones</p> </td>
+              </tr>
+            </table>
+            <hr class="hr-custom q-ma-md">
+            <p>Contactenos para mas detalles: <br>
+              +57 3162747014 <br>
+              +44 7984436635
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-8">
+          <Carousel>
+            <q-carousel-slide :name="1" img-src="/statics/images/casas/pereira/1/image1.jpeg" />
+            <q-carousel-slide :name="2" img-src="/statics/images/casas/pereira/1/image2.jpeg" />
+            <q-carousel-slide :name="3" img-src="/statics/images/casas/pereira/1/image3.jpeg" />
+            <q-carousel-slide :name="4" img-src="/statics/images/casas/pereira/1/image4.jpeg" />
+            <q-carousel-slide :name="5" img-src="/statics/images/casas/pereira/1/image5.jpeg" />
+            <q-carousel-slide :name="6" img-src="/statics/images/casas/pereira/1/image6.jpeg" />
           </Carousel>
         </div>
       </div>
@@ -121,6 +176,10 @@ export default {
   padding 20px
   margin-left 10px
   margin-right 10px
+.titulo
+  text-align: center
+  margin-bottom 70px 
+
 p, .fa-check
   margin 0
   font-size 18px
