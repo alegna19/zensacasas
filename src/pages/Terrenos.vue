@@ -2,11 +2,18 @@
   <q-page>
     <div class="countainer"></div>
     <div class="q-ma-xl inmuebles">
-      <h3 class="titulo">Venta de Terrenos</h3>
+      <h3 class="titulo">Terrenos en Venta</h3>
       <div class="row">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 align-center">
+          <div class="custom-card q-pa-xl">
+            <i class="las la-exclamation-circle"></i>
+            <h5>Aun no tenemos terrenos/lotes en venta</h5>
+            <p>Sin embargo estamos actualizando informacion con frecuenta. Visitanos!</p>
+          </div>
+        </div>
+        <!-- <div class="col-12 col-sm-4">
           <div class="custom-card">
-            <h5>Terreno en Palmira</h5>
+            <h5>Apartamento en Palmira</h5>
             <p>Ubicada en medio de dos centros comerciales, tiene una extensión territorial de 104 &#x33A1; y cuenta con lo siguiente:</p>
             <table class="q-mt-md">
               <tr>
@@ -43,7 +50,7 @@
             <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/1/image2.jpeg" />
             <q-carousel-slide :name="3" img-src="/statics/images/casas/palmira/1/image3.jpeg" />
           </Carousel>
-        </div>
+        </div> -->
       </div>
     </div>
   </q-page>
@@ -74,11 +81,12 @@ export default {
   margin-right 10px
 .titulo
   text-align: center
-  margin-bottom 70px 
-
+  margin-bottom 70px
 p, .fa-check
   margin 0
   font-size 18px
 .fa-check
   margin-right 10px
+.la-exclamation-circle
+  font-size 120px
 </style>

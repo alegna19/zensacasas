@@ -1,6 +1,9 @@
 <template>
   <q-layout view="hHh Lpr lFf">
-    <q-header elevated class="opacity-bg" >
+    <q-header elevated :class="{
+      'opacity-bg2' : this.$route.path !== '/' || scrollPosition > 200,
+      'opacity-bg' : this.$route.path === '/'
+    }">
       <q-toolbar>
         <q-btn class="show-mobile-only"
           flat
@@ -26,7 +29,7 @@
                   <q-avatar icon="las la-home" color="positive" text-color="white" />
                 </q-item-section>
                 <q-item-section>
-                  <q-item-label>Casas</q-item-label>
+                  <q-item-label>Casas </q-item-label>
                   <!-- <q-item-label caption style="color:grey">Lighting Manufacturers</q-item-label> -->
                 </q-item-section>
               </q-item>
@@ -62,12 +65,11 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
-          <q-route-tab name="contact" icon="fas fa-paper-plane" label="Contactenos" clickable to="contactenos" exact/>
+          <q-route-tab name="contact" icon="lab la-telegram" label="Contactenos" clickable to="contactenos" exact/>
         </q-tabs>
         <div class="show-mobile-only">
           <q-btn flat round dense icon="fas fa-home" to="/" class="q-mr-md" />
-          <q-btn flat round dense icon="fas fa-paper-plane" to="/contact" class="q-mr-md" />
-          <q-btn flat round dense icon="fas fa-map-marker-alt" type="a" href="https://goo.gl/maps/FA3ueXoRS4xUgxqF9" target="_blank" class="q-mr-md" />
+          <q-btn flat round dense icon="fas fa-paper-plane" to="/contactenos" class="q-mr-md" />
         </div>
 
       </q-toolbar>
@@ -75,49 +77,61 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      bordered
-      content-class="bg-grey-2"
+      content-style="background-color: #2e2d2b"
     >
       <q-list>
-        <q-item-label header>Quick access</q-item-label>
-        <q-item clickable to="/about">
+        <br>
+        <q-item-label header class="side-menu-title"><u>Menu</u></q-item-label>
+        <q-item clickable to="/#aboutus">
           <q-item-section avatar>
-            <q-icon name="fas fa-users" />
+            <q-icon name="las la-user-tie" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>About us</q-item-label>
+            <q-item-label>Quienes somos</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable to="/case">
+        <q-item-label header class="side-menu-title"><u>En Venta</u></q-item-label>
+        <q-item clickable to="/casas">
           <q-item-section avatar>
-            <q-icon name="fas fa-clipboard-list" />
+            <q-icon name="las la-home" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Case Studies</q-item-label>
+            <q-item-label>Casas</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable to="/contact">
+        <q-item clickable to="/apartamentos">
           <q-item-section avatar>
-            <q-icon name="fas fa-paper-plane" />
+            <q-icon name="las la-building" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Contact us</q-item-label>
+            <q-item-label>Apartamentos</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable tag="a" href="https://goo.gl/maps/FA3ueXoRS4xUgxqF9" target="_blank">
+        <q-item clickable to="/fincas">
           <q-item-section avatar>
-            <q-icon name="fas fa-map-marker-alt" />
+            <q-icon name="las la-warehouse" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Our Location</q-item-label>
+            <q-item-label>Fincas</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable to="/privacy">
+        <q-item clickable to="/terrenos">
           <q-item-section avatar>
-            <q-icon name="fas fa-user-shield" />
+            <q-icon name="las la-mountain" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Privacy Policy</q-item-label>
+            <q-item-label>Terrenos / Lotes</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item-label header class="side-menu-title"><u>Comunicate con nosotros</u></q-item-label>
+        <q-item>
+          <q-item-section avatar>
+            <q-icon name="las la-phone" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>
+              +57 3162747014
+            </q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -127,22 +141,61 @@
       <router-view />
     </q-page-container>
 
-    <footer>
-      <div class="footer-bg">
-              <div class="col-12 col-sm-4 hide-mobile-only">
-                  <h4>Mantente en Contacto</h4>
-                  <p class="text-white">Colombia <br></p>
-                  <i class="fas fa-map-pin fa-3x"></i>
-                  <p class="text-white">Nuestros Telefonos <br>
-                  +57 3162747014 <br>
-                  +44 7984436635</p>
-                  <i class="fas fa-phone fa-2x"></i>
-              </div>
-              <div>Columna2</div>
+    <footer class="footer-bg">
+      <div class="row q-pa-sm justify-center">
+        <img src="" class="img-contractor">
+      </div>
+      <q-parallax src="">
+        <div class="row foot-content">
+          <div class="col-12 col-sm-4 hide-mobile-only">
+            <div style="width:280px; margin:0 auto">
+              <h4 class="text-white small-margin">Contactenos</h4>
+              <p class="text-white">
+                <table>
+                  <tr>
+                    <td class="q-pr-md"><i class="las la-map-marked la-2x"></i></td>
+                    <td><p class="text-white" style="margin:0"> Vendemos en Quindio, Caldas, Risaralda y Valle</p>
+                    </td>
+                  </tr><br>
+                  <tr>
+                    <td class="q-pr-md"><i class="las la-phone la-2x"></i></td>
+                    <td>
+                      <p class="text-white" style="margin:0">
+                        +57 3162747014 <br>
+                        +44 7984436635
+                      </p>
+                    </td>
+                  </tr><br>
+                  <tr>
+                    <td class="q-pr-md"><i class="lab la-telegram la-2x"></i></td>
+                    <td><p style="margin:0" class="text-white">zensacasas&#64;gmail.com</p></td>
+                  </tr>
+                </table>
+              </p>
+            </div>
+          </div>
+          <div style="width:320px; margin:0 auto">
+            <div class="col-12 col-sm-4">
+              <h4 class="text-white small-margin">&copy; Zensacasas</h4>
+              <p class="text-white">{{year.getFullYear()}} Todos los derechos reservados <br>
+              </p>
+              <router-link to="/privacy"><p class="text-white"><u>Politica de Privacidad</u></p></router-link>
+              <h6 class="text-white small-margin">Siguenos en</h6>
+              <a href="https://twitter.com/cantinazosRG1" target="_blank" class="q-pr-md"><i class="fab fa-twitter fa-3x text-white"></i></a>
+              <a href="https://www.instagram.com/ceneliar2014" target="_blank"><i class="fab fa-instagram fa-3x text-white"></i></a>
+              <br><br>
+              <!-- <img src="~assets/images/green.png" style="height:80px; width:auto"> -->
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 q-pt-md hide-mobile-only">
+            <h4 class="text-white small-margin">En Venta</h4>
+            <router-link to="/casas"><p class="text-white" style="margin:0">Casas</p></router-link>
+            <router-link to="/apartamentos"><p class="text-white" style="margin:0">Apartamentos</p></router-link>
+            <router-link to="/fincas"><p class="text-white" style="margin:0">Fincas</p></router-link>
+            <router-link to="/terrenos"><p class="text-white" style="margin:0">Terrenos</p></router-link>
+          </div>
         </div>
-      <div class="grid-container">
-
-</div>
+      </q-parallax>
     </footer>
 
   </q-layout>
@@ -156,7 +209,8 @@ export default {
       tab: '',
       menuProducts: false,
       scrollPosition: null,
-      menuOver: false
+      menuOver: false,
+      year: new Date()
     }
   },
   methods: {
@@ -165,7 +219,7 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
+    window.addEventListener('scroll', this.updateScroll)
   },
   destroy() {
     window.removeEventListener('scroll', this.updateScroll)
@@ -178,7 +232,7 @@ export default {
   body, div
     color $primary
   .logo1
-    height 80px
+    height 86px
     position fixed
     top 4px
     left 40px
@@ -190,10 +244,12 @@ export default {
   .q-tab__label
     font-family 'Baloo 2' !important
   .footer-bg
-    text-align center
     background radial-gradient(ellipse at top, #c4d600, #000000)
     width 100%
-    display grid
-    grid-gap 5px
-    grid-template-columns 50% 50%
+  .side-menu-title
+    color #c9c9c9
+  @media (max-width: 600px)
+    .logo1
+      height 40px
+      margin-left 20px
 </style>

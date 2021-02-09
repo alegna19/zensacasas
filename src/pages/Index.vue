@@ -16,27 +16,27 @@
         <q-carousel-slide :name="1" img-src="~assets/images/house1.jpg" >
           <div class="front-text">
             <h4 class="text-primary">VENTA DE CASAS</h4>
-            <p class="text-white">En el Eje Cafetero, revise nuestros inmuebles ssss </p>
-            <q-btn class="q-mr-md" color="positive" label="Ver Inmuebles"></q-btn>
-            <q-btn color="positive" outline label="Contactenos"></q-btn>
+            <p class="text-white">En Quindio, Caldas, Risaralda y Valle </p>
+            <q-btn class="q-mr-md" to="/casas" color="positive" label="Ver Inmuebles"></q-btn>
+            <q-btn color="positive" to="/contactenos" outline label="Contactenos"></q-btn>
             <br><br>
           </div>
         </q-carousel-slide>
         <q-carousel-slide :name="2" img-src="~assets/images/house3.jpeg">
           <div class="front-text">
-            <h5 class="text-primary">VENTA DE FINCAS Y TERRENOS</h5>
-            <p class="text-white">En el Eje Cafetero, revise nuestros inmuebles ssss </p>
-            <q-btn class="q-mr-md" color="positive" label="Ver Inmuebles"></q-btn>
-            <q-btn color="positive" icon="las la-phone-volume" outline label="Contactenos"></q-btn>
+            <h4 class="text-primary">VENTA DE FINCAS Y TERRENOS</h4>
+            <p class="text-white">En Quindio, Caldas, Risaralda y Valle </p>
+            <q-btn class="q-mr-md" to="/fincas" color="positive" label="Ver Inmuebles"></q-btn>
+            <q-btn color="positive" to="/contactenos" outline label="Contactenos"></q-btn>
             <br><br>
           </div>
         </q-carousel-slide>
         <q-carousel-slide :name="3" img-src="~assets/images/house4.jpg">
           <div class="front-text">
-            <h5 class="text-primary">VENTA DE APARTAMENTOS</h5>
-            <p class="text-white">En el Eje Cafetero, revise nuestros inmuebles ssss </p>
-            <q-btn class="q-mr-md" color="positive" label="Ver Inmuebles"></q-btn>
-            <q-btn color="positive" outline label="Contactenos"></q-btn>
+            <h4 class="text-primary">VENTA DE APARTAMENTOS</h4>
+            <p class="text-white">En Quindio, Caldas, Risaralda y Valle </p>
+            <q-btn class="q-mr-md" to="/apartamentos" color="positive" label="Ver Inmuebles"></q-btn>
+            <q-btn color="positive" to="/contactenos" outline label="Contactenos"></q-btn>
             <br><br>
           </div>
         </q-carousel-slide>
@@ -94,7 +94,8 @@
       <div class="col-6">
         <h4>Quienes Somos</h4>
         <p class="q-mt-lg q-pr-md text-justify">
-          Somos una empresa del sector inmobiliario que ofrece informacion y asistencia en la compra y venta de bienes inmuebles,
+          En Zensacasas ofrecemos informacion y asistencia antes, durante y despues del proceso de la compra y venta de bienes inmuebles
+          ubicados principalmente en Quindio, Caldas, Risaralda y Valle (Colombia). <br>
           Casas, Apartamentos, Fincas y Terrenos. En Zensacasas estamos comprometidos con la calidad, seguridad y cumplimiento de
           nuestros servicios, cubriendo las necesidades de nuestros clientes en su busqueda de su siguiente gran negocio.
         </p>
@@ -146,11 +147,11 @@
       <div class="col-12 align-center">
         <h4>Caracteristicas de Nuestro Servicio</h4>
         <p>
-          <i class="fas fa-check" style="background-color=#c4d600"></i> Servicio con calidad <br>
-          <i class="fas fa-check"></i> Transparencia e Integridad <br>
-          <i class="fas fa-check"></i> Satisfaccion de nuestros clientes <br>
-          <i class="fas fa-check"></i> Comodidad en tu hogar <br>
-          <i class="fas fa-check"></i> Confianza y Responsabilidad en nuestros servicios <br>
+          <i class="fas fa-check" style="color:#c4d600"></i> Servicio con calidad <br>
+          <i class="fas fa-check" style="color:#c4d600"></i> Transparencia e Integridad <br>
+          <i class="fas fa-check" style="color:#c4d600"></i> Satisfaccion de nuestros clientes <br>
+          <i class="fas fa-check" style="color:#c4d600"></i> Comodidad en tu hogar <br>
+          <i class="fas fa-check" style="color:#c4d600"></i> Confianza y Responsabilidad en nuestros servicios <br>
         </p>
       </div>
     </div>
@@ -173,7 +174,7 @@ export default {
   .carousel-front
     margin-top -50px
   .front-text
-    width 600px
+    width 530px
     background-color rgba(0,0,0, 0.4)
     border-radius 8px
     position absolute
@@ -232,7 +233,18 @@ export default {
       transform translate(-90px, 0%)
     100%
       transform translate(85px, 0%)
-
   .img-inmuebles
     height 400px
+
+  @media (max-width: 600px)
+    .front-text
+      width 100%
+      padding 20px
+      padding-left 50px
+      background-color rgba(0,0,0, 0.4)
+      margin-left -15px
+    h4
+      font-size 20px
+    p
+      font-size 18px
 </style>

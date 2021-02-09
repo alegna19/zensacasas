@@ -2,7 +2,7 @@
   <q-page>
     <div class="countainer"></div>
     <div class="q-ma-xl inmuebles">
-      <h3 class="titulo">Ventas de Fincas</h3>
+      <h3 class="titulo">Fincas en Venta</h3>
       <div class="row">
         <div class="col-12 col-sm-4">
           <div class="custom-card">
@@ -80,7 +80,7 @@ export default {
   margin-right 10px
 .titulo
   text-align: center
-  margin-bottom 70px 
+  margin-bottom 70px
 p, .fa-check
   margin 0
   font-size 18px
