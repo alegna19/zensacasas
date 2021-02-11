@@ -166,23 +166,29 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.inmuebles
-  margin-top 80px
-.custom-card
-  border-radius 8px
-  background #f5f8fa
-  box-shadow 0 0 10px rgba(0, 0, 0, 0.3)
-  padding 20px
-  margin-left 10px
-  margin-right 10px
-.titulo
-  text-align: center
-  margin-bottom 70px 
+  <style lang="stylus" scoped>
+    .inmuebles
+      margin-top 80px
+    .custom-card
+      border-radius 8px
+      background #f5f8fa
+      box-shadow 0 0 10px rgba(0, 0, 0, 0.3)
+      padding 20px
+      margin-left 10px
+      margin-right 10px
+    .titulo
+      text-align: center
+      margin-bottom 70px 
 
-p, .fa-check
-  margin 0
-  font-size 18px
-.fa-check
-  margin-right 10px
-</style>
+    p, .fa-check
+      margin 0
+      font-size 18px
+    .fa-check
+      margin-right 10px
+
+    // @media (max-width: 500px)  
+    //   .titulo
+    //   text-align: center
+    //   margin-bottom 50px 
+
+  </style>

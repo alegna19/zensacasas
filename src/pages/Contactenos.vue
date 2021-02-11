@@ -17,7 +17,7 @@
               <img src="~assets/icons/contact.png" class="contact" alt="contactenos">
             </div>
             <div class="col-10 q-pl-xl q-pr-xl">
-              <q-form id="contact-form" class="q-gutter-md contact-form" @submit.prevent="sendEmail"><!--@submit="onSubmit"-->
+              <q-form id="contact-form" class="q-gutter-md contact-form" @submit.prevent=""><!--@submit="onSubmit"-->
                 <q-input dense v-model="name" name="name" standout="bg-primary text-white" label="Nombre *" required/>
                 <q-input dense v-model="email" name="email" standout="bg-primary text-white" label="Email *" type="email" required/>
                 <q-input dense v-model="phone" name="phone" standout="bg-primary text-white" label="Telefono" />
@@ -35,6 +35,7 @@
               </q-form>
             </div>
           </div>
+
 
         </div>
       </div>

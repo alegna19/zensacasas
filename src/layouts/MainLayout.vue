@@ -174,7 +174,14 @@
               </p>
             </div>
           </div>
-          <div style="width:320px; margin:0 auto">
+          <div class="col-12 col-sm-4 q-pt-md hide-mobile-only align-center">
+            <h4 class="text-white small-margin">En Venta</h4>
+            <router-link to="/casas"><p class="text-white" style="margin:0">Casas</p></router-link>
+            <router-link to="/apartamentos"><p class="text-white" style="margin:0">Apartamentos</p></router-link>
+            <router-link to="/fincas"><p class="text-white" style="margin:0">Fincas</p></router-link>
+            <router-link to="/terrenos"><p class="text-white" style="margin:0">Terrenos</p></router-link>
+          </div>
+            <div style="width:320px; margin:0 auto">
             <div class="col-12 col-sm-4">
               <h4 class="text-white small-margin">&copy; Zensacasas</h4>
               <p class="text-white">{{year.getFullYear()}} Todos los derechos reservados <br>
@@ -186,13 +193,6 @@
               <br><br>
               <!-- <img src="~assets/images/green.png" style="height:80px; width:auto"> -->
             </div>
-          </div>
-          <div class="col-12 col-sm-4 q-pt-md hide-mobile-only">
-            <h4 class="text-white small-margin">En Venta</h4>
-            <router-link to="/casas"><p class="text-white" style="margin:0">Casas</p></router-link>
-            <router-link to="/apartamentos"><p class="text-white" style="margin:0">Apartamentos</p></router-link>
-            <router-link to="/fincas"><p class="text-white" style="margin:0">Fincas</p></router-link>
-            <router-link to="/terrenos"><p class="text-white" style="margin:0">Terrenos</p></router-link>
           </div>
         </div>
       </q-parallax>

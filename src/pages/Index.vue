@@ -90,8 +90,8 @@
     </div>
 
     <!-- general info -->
-    <div class="row grey-bg q-pa-xl" id="aboutus">
-      <div class="col-6">
+    <div class="row grey-bg q-pa-xl quienes-somos" id="aboutus">
+      <div class="col-12 col-sm-6">
         <h4>Quienes Somos</h4>
         <p class="q-mt-lg q-pr-md text-justify">
           En Zensacasas ofrecemos informacion y asistencia antes, durante y despues del proceso de la compra y venta de bienes inmuebles
@@ -100,9 +100,9 @@
           nuestros servicios, cubriendo las necesidades de nuestros clientes en su busqueda de su siguiente gran negocio.
         </p>
         <h5>Llamanos Ahora</h5>
-        <p><i class="las la-phone"></i> +57 3162747014 </p>
+        <p><i class="las la-phon"></i> +57 3162747014 </p>
       </div>
-      <div class="col-6 text-center">
+      <div class="col-12 col-sm-6 text-center image-nosotros">
         <img src="~assets/images/nosotros.jpg" alt="negocio">
       </div>
     </div>
@@ -115,28 +115,28 @@
       <div class="col-12 col-sm-6 q-pa-md">
         <q-img src="~assets/images/casa.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
-            <q-btn class="q-mr-md" color="positive" label="Casas"></q-btn>
+            <q-btn class="q-mr-md" to="casas" color="positive" label="Casas"></q-btn>
           </div>
         </q-img>
       </div>
       <div class="col-12 col-sm-6 q-pa-md">
         <q-img src="~assets/images/apta.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
-            <q-btn class="q-mr-md" color="positive" label="Apartamentos"></q-btn>
+            <q-btn class="q-mr-md" to="apartamentos" color="positive" label="Apartamentos"></q-btn>
           </div>
         </q-img>
       </div>
       <div class="col-12 col-sm-6 q-pa-md">
         <q-img src="~assets/images/finca.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
-            <q-btn class="q-mr-md" color="positive" label="Fincas"></q-btn>
+            <q-btn class="q-mr-md" to="fincas" color="positive" label="Fincas"></q-btn>
           </div>
         </q-img>
       </div>
       <div class="col-12 col-sm-6 q-pa-md">
         <q-img src="~assets/images/terreno.jpeg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
-            <q-btn class="q-mr-md" color="positive" label="Terrenos"></q-btn>
+            <q-btn class="q-mr-md" to="terrenos" color="positive" label="Terrenos"></q-btn>
           </div>
         </q-img>
       </div>
@@ -247,4 +247,20 @@ export default {
       font-size 20px
     p
       font-size 18px
+
+  @media (max-width: 500px)   
+    .carousel-front
+      margin-top -50px
+  
+    .image-nosotros
+      width 50%
+      weight 20%
+    .quienes-somos
+      margin-top -70px
+    .icon-images img 
+      height 80px
+      margin-top -15px
+    p
+      font-size 16px
+
 </style>
