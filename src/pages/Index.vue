@@ -73,7 +73,7 @@
     </svg>
 
     <!-- icons -->
-    <div class="row q-pa-xl icon-images align-center">
+    <div class="row q-pa-md icon-images align-center">
       <div class="col-4">
         <img src="~assets/icons/hands.png" alt="confianza">
         <p>Confianza y Seguridad <br>
@@ -90,8 +90,8 @@
     </div>
 
     <!-- general info -->
-    <div class="row grey-bg q-pa-xl quienes-somos" id="aboutus">
-      <div class="col-12 col-sm-6">
+    <div class="row grey-bg quienes-somos" id="aboutus">
+      <div class="col-12 col-sm-6 q-pa-xl">
         <h4>Quienes Somos</h4>
         <p class="q-mt-lg q-pr-md text-justify">
           En Zensacasas ofrecemos informacion y asistencia antes, durante y despues del proceso de la compra y venta de bienes inmuebles
@@ -108,39 +108,41 @@
     </div>
 
     <!-- casas -->
-    <div class="row q-pa-xl">
+    <div class="row q-pt-xl q-pb-xl">
       <div class="col-12 align-center">
         <h4>Venta Inmuebles</h4>
       </div>
-      <div class="col-12 col-sm-6 q-pa-md">
+      <div class="col-12 col-sm-6 inmuebles-padding-iz">
         <q-img src="~assets/images/casa.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" to="casas" color="positive" label="Casas"></q-btn>
           </div>
         </q-img>
       </div>
-      <div class="col-12 col-sm-6 q-pa-md">
+      <div class="col-12 col-sm-6 inmuebles-padding-der">
         <q-img src="~assets/images/apta.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" to="apartamentos" color="positive" label="Apartamentos"></q-btn>
           </div>
         </q-img>
       </div>
-      <div class="col-12 col-sm-6 q-pa-md">
+      <div class="col-12 col-sm-6 inmuebles-padding-iz">
         <q-img src="~assets/images/finca.jpg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" to="fincas" color="positive" label="Fincas"></q-btn>
           </div>
         </q-img>
       </div>
-      <div class="col-12 col-sm-6 q-pa-md">
+      <div class="col-12 col-sm-6 inmuebles-padding-der">
         <q-img src="~assets/images/terreno.jpeg" class="img-inmuebles">
           <div class="absolute-full text-subtitle2 flex flex-center">
             <q-btn class="q-mr-md" to="terrenos" color="positive" label="Terrenos"></q-btn>
           </div>
         </q-img>
+      <br><br>
       </div>
     </div>
+
 
     <!-- features -->
     <div class="row grey-bg q-pa-xl">
@@ -164,9 +166,21 @@ export default {
   data () {
     return {
       slide: 1,
-      autoplay: true
+      autoplay: true,
+      scrollPosition: null
     }
-  }
+  },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll)
+  },
+  destroy() {
+    window.removeEventListener('scroll', this.updateScroll)
+  },
 }
 </script>
 
@@ -235,7 +249,18 @@ export default {
       transform translate(85px, 0%)
   .img-inmuebles
     height 400px
-
+  .inmuebles-padding-iz
+    padding-left 40px
+    padding-right 15px
+    padding-top 30px
+    padding-bottom 6px
+  .inmuebles-padding-der
+    padding-left 15px
+    padding-right 40px
+    padding-top 30px
+    padding-bottom 6px
+  .image-nosotros img
+    padding-top 70px
   @media (max-width: 600px)
     .front-text
       width 100%
@@ -247,20 +272,17 @@ export default {
       font-size 20px
     p
       font-size 18px
-
-  @media (max-width: 500px)   
-    .carousel-front
-      margin-top -50px
-  
-    .image-nosotros
-      width 50%
-      weight 20%
-    .quienes-somos
-      margin-top -70px
-    .icon-images img 
-      height 80px
-      margin-top -15px
+    .inmuebles-padding-iz, .inmuebles-padding-der
+      padding-left 0px
+      padding-right 0px
+    .image-nosotros img
+      padding-top 0px
+      margin-bottom 50px
+      width 100%
+  @media (max-width: 500px)
+    .icon-images img
+      height 60px
     p
-      font-size 16px
+      font-size 14px
 
 </style>

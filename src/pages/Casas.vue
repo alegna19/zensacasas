@@ -4,7 +4,7 @@
     <div class="q-ma-xl inmuebles">
       <h3 class="titulo">Casas en Venta</h3>
       <div class="row">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-md-4">
           <div class="custom-card">
             <h5>Casa en Palmira</h5>
             <p>Ubicada en medio de dos centros comerciales, tiene una extensión territorial de 104 &#x33A1; y cuenta con lo siguiente:</p>
@@ -37,7 +37,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-sm-8">
+        <div class="col-12 col-md-8">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/1/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/1/image2.jpeg" />
@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-md-4">
           <div class="custom-card">
             <h5>Casa en Palmira</h5>
             <p>Ubicada en Cr3 # 1-56 Barrio el centro con 4,30 metros de frente y fondo 12,80 y cuenta con lo siguiente:</p>
@@ -94,7 +94,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-sm-8">
+        <div class="col-12 col-md-8">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/2/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/2/image2.jpeg" />
@@ -113,7 +113,7 @@
         </div>
       </div>
             <div class="row">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-md-4">
           <div class="custom-card">
             <h5>Casa en Pereira</h5>
             <p>Ubicada en Pereira y cuenta con lo siguiente:</p>
@@ -138,7 +138,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-sm-8">
+        <div class="col-12 col-md-8">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/casas/pereira/1/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/pereira/1/image2.jpeg" />
@@ -178,17 +178,16 @@ export default {
       margin-right 10px
     .titulo
       text-align: center
-      margin-bottom 70px 
-
+      margin-bottom 70px
     p, .fa-check
       margin 0
       font-size 18px
     .fa-check
       margin-right 10px
 
-    // @media (max-width: 500px)  
-    //   .titulo
-    //   text-align: center
-    //   margin-bottom 50px 
+    @media (max-width: 500px)
+      .titulo
+        text-align: center
+        margin-bottom 50px
 
   </style>

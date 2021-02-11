@@ -174,15 +174,17 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-sm-4 q-pt-md hide-mobile-only align-center">
+          <div class="col-12 col-sm-4 hide-mobile-only">
+            <div style="width:280px; margin:0 auto; padding-left: 50px">
             <h4 class="text-white small-margin">En Venta</h4>
             <router-link to="/casas"><p class="text-white" style="margin:0">Casas</p></router-link>
             <router-link to="/apartamentos"><p class="text-white" style="margin:0">Apartamentos</p></router-link>
             <router-link to="/fincas"><p class="text-white" style="margin:0">Fincas</p></router-link>
             <router-link to="/terrenos"><p class="text-white" style="margin:0">Terrenos</p></router-link>
+            </div>
           </div>
-            <div style="width:320px; margin:0 auto">
-            <div class="col-12 col-sm-4">
+          <div class="col-12 col-sm-4">
+            <div style="width:300px; margin:0 auto">
               <h4 class="text-white small-margin">&copy; Zensacasas</h4>
               <p class="text-white">{{year.getFullYear()}} Todos los derechos reservados <br>
               </p>
