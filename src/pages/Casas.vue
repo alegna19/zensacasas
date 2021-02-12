@@ -115,7 +115,7 @@
           </Carousel>
         </div>
       </div>
-            <div class="row">
+        <div class="row">
         <div class="col-12 col-md-4">
           <div class="custom-card">
             <h5>Casa en Pereira</h5>
