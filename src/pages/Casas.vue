@@ -32,12 +32,14 @@
             </table>
             <hr class="hr-custom q-ma-md">
             <p>Contactenos para mas detalles: <br>
-              +57 3162747014 <br>
-              +44 7984436635
+            <br>
+             +57 3108420754 <br>
+             +57 3137179764<br>
+             +44 795715676
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 carousel">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/1/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/1/image2.jpeg" />
@@ -89,12 +91,13 @@
             </table>
             <hr class="hr-custom q-ma-md">
             <p>Contactenos para mas detalles: <br>
-              +57 3162747014 <br>
-              +44 7984436635
+             +57 3108420754 <br>
+             +57 3137179764<br>
+             +44 795715676
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 carousel">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/casas/palmira/2/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/palmira/2/image2.jpeg" />
@@ -116,7 +119,9 @@
         <div class="col-12 col-md-4">
           <div class="custom-card">
             <h5>Casa en Pereira</h5>
+            <br>
             <p>Ubicada en Pereira y cuenta con lo siguiente:</p>
+            <br>
             <table class="q-mt-md">
               <tr>
                 <td><i class="fas fa-check"></i> </td>
@@ -132,13 +137,15 @@
               </tr>
             </table>
             <hr class="hr-custom q-ma-md">
-            <p>Contactenos para mas detalles: <br>
-              +57 3162747014 <br>
-              +44 7984436635
+            <p>Contactenos para mas detalles: <br> 
+            <br>
+             +57 3108420754 <br>
+             +57 3137179764<br>
+             +44 795715676
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 carousel">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/casas/pereira/1/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/casas/pereira/1/image2.jpeg" />
@@ -189,5 +196,8 @@ export default {
       .titulo
         text-align: center
         margin-bottom 50px
+      .carousel
+        margin-top 30px
+        width 100%
 
   </style>

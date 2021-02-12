@@ -161,8 +161,9 @@
                     <td class="q-pr-md"><i class="las la-phone la-2x"></i></td>
                     <td>
                       <p class="text-white" style="margin:0">
-                        +57 3162747014 <br>
-                        +44 7984436635
+                         +57 3108420754 <br>
+                         +57 3137179764<br>
+                         +44 795715676
                       </p>
                     </td>
                   </tr><br>

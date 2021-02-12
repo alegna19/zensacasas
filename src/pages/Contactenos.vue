@@ -7,8 +7,9 @@
           <h4>Contactanos</h4>
           <hr class="hr-custom q-ma-md">
           <p>
-            +57 3162747014 <br>
-            +44 7984436635
+             +57 3108420754 <br>
+             +57 3137179764<br>
+             +44 795715676
           </p>
         </div>
         <div class="col-12 col-sm-9 q-pa-lg">
