@@ -111,7 +111,6 @@
             <q-carousel-slide :name="10" img-src="/statics/images/casas/palmira/2/image10.jpeg" />
             <q-carousel-slide :name="11" img-src="/statics/images/casas/palmira/2/image11.jpeg" />
             <q-carousel-slide :name="12" img-src="/statics/images/casas/palmira/2/image12.jpeg" />
-
           </Carousel>
         </div>
       </div>
