@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="countainer"></div>
-    <div class="q-ma-xl inmuebles">
+    <div class="inmuebles">
       <h3 class="titulo">Casas en Venta</h3>
       <div class="row">
         <div class="col-12 col-md-4">
@@ -114,7 +114,7 @@
           </Carousel>
         </div>
       </div>
-        <div class="row">
+      <div class="row">
         <div class="col-12 col-md-4">
           <div class="custom-card">
             <h5>Casa en Pereira</h5>
@@ -136,9 +136,9 @@
               </tr>
             </table>
             <hr class="hr-custom q-ma-md">
-            <p>Contactenos para mas detalles: <br> 
+            <p>Contactenos para mas detalles: <br>
             <br>
-             +57 3108420754 <br>
+             +57 3108420754<br>
              +57 3137179764<br>
              +44 795715676
             </p>
@@ -174,7 +174,9 @@ export default {
 
   <style lang="stylus" scoped>
     .inmuebles
-      margin-top 80px
+      margin-top 50px
+      margin-left 40px
+      margin-right 40px
     .custom-card
       border-radius 8px
       background #f5f8fa
@@ -191,12 +193,18 @@ export default {
     .fa-check
       margin-right 10px
 
-    @media (max-width: 500px)
+    @media (max-width: 600px)
       .titulo
         text-align: center
         margin-bottom 50px
-      .carousel
-        margin-top 30px
-        width 100%
+      .custom-card
+        box-shadow 0 0 10px rgba(0, 0, 0, 0)
+        border-radius 0
+        margin-left 0
+        margin-right 0
+      .inmuebles
+        margin-left 0
+        margin-right 0
+        margin-top 0
 
   </style>

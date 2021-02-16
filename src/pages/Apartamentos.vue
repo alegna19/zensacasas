@@ -27,7 +27,7 @@
               </tr>
             </table>
             <hr class="hr-custom q-ma-md">
-            <p>Contactenos para mas detalles: <br> 
+            <p>Contactenos para mas detalles: <br>
             <br>
              +57 3108420754 <br>
              +57 3137179764<br>
@@ -37,15 +37,15 @@
         </div>
         <div class="col-12 col-md-8 carousel">
           <Carousel>
-            <q-carousel-slide :name="1" img-src="/statics/images/apartamentos/pereira/1/image1.jpeg" />
-            <q-carousel-slide :name="2" img-src="/statics/images/apartamentos/pereira/1/image2.jpeg" />
-            <q-carousel-slide :name="3" img-src="/statics/images/apartamentos/pereira/1/image3.jpeg" />
-            <q-carousel-slide :name="4" img-src="/statics/images/apartamentos/pereira/1/image4.jpeg" />
-            <q-carousel-slide :name="5" img-src="/statics/images/apartamentos/pereira/1/image5.jpeg" />
-            <q-carousel-slide :name="6" img-src="/statics/images/apartamentos/pereira/1/image6.jpeg" />
-            <q-carousel-slide :name="7" img-src="/statics/images/apartamentos/pereira/1/image7.jpeg" />
-            <q-carousel-slide :name="8" img-src="/statics/images/apartamentos/pereira/1/image8.jpeg" />
-            <q-carousel-slide :name="9" img-src="/statics/images/apartamentos/pereira/1/image9.jpeg" />
+            <q-carousel-slide :name="1" img-src="/statics/images/apar/pereira/1/image1.jpeg" />
+            <q-carousel-slide :name="2" img-src="/statics/images/apar/pereira/1/image2.jpeg" />
+            <q-carousel-slide :name="3" img-src="/statics/images/apar/pereira/1/image3.jpeg" />
+            <q-carousel-slide :name="4" img-src="/statics/images/apar/pereira/1/image4.jpeg" />
+            <q-carousel-slide :name="5" img-src="/statics/images/apar/pereira/1/image5.jpeg" />
+            <q-carousel-slide :name="6" img-src="/statics/images/apar/pereira/1/image6.jpeg" />
+            <q-carousel-slide :name="7" img-src="/statics/images/apar/pereira/1/image7.jpeg" />
+            <q-carousel-slide :name="8" img-src="/statics/images/apar/pereira/1/image8.jpeg" />
+            <q-carousel-slide :name="9" img-src="/statics/images/apar/pereira/1/image9.jpeg" />
           </Carousel>
         </div>
       </div>
