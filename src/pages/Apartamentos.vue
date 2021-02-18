@@ -1,17 +1,13 @@
 <template>
   <q-page>
     <div class="countainer"></div>
-    <div class="q-ma-xl inmuebles">
+    <div class="inmuebles">
       <h3 class="titulo">Apartamentos en Venta</h3>
-
-      </div>
-        <div class="row">
+      <div class="row">
         <div class="col-12 col-md-4">
           <div class="custom-card">
-            <h5>Casa en Pereira</h5>
-            <br>
+            <h5>Apartamento en Pereira</h5>
             <p>Ubicada en Cerrito, Risaralda y cuenta con lo siguiente:</p>
-            <br>
             <table class="q-mt-md">
               <tr>
                 <td><i class="fas fa-check"></i> </td>
@@ -49,7 +45,7 @@
           </Carousel>
         </div>
       </div>
-
+    </div>
   </q-page>
 </template>
 
@@ -68,7 +64,9 @@ export default {
 
   <style lang="stylus" scoped>
     .inmuebles
-      margin-top 80px
+      margin-top 50px
+      margin-left 40px
+      margin-right 40px
     .custom-card
       border-radius 8px
       background #f5f8fa
@@ -85,12 +83,20 @@ export default {
     .fa-check
       margin-right 10px
 
-    @media (max-width: 500px)
+    @media (max-width: 600px)
       .titulo
         text-align: center
+        margin-top 50px
         margin-bottom 50px
-      .carousel
-        margin-top 30px
-        width 100%
+
+      .custom-card
+        box-shadow 0 0 10px rgba(0, 0, 0, 0)
+        border-radius 0
+        margin-left 0
+        margin-right 0
+      .inmuebles
+        margin-left 0
+        margin-right 0
+        margin-top 0
 
   </style>

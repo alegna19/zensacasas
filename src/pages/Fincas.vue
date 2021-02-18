@@ -1,12 +1,12 @@
 <template>
   <q-page>
     <div class="countainer"></div>
-    <div class="q-ma-xl inmuebles">
+    <div class="inmuebles">
       <h3 class="titulo">Fincas en Venta</h3>
       <div class="row">
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-md-4">
           <div class="custom-card">
-            <h5>Finca en Palmira</h5>
+            <h5>Finca en Pereira</h5>
             <p>Ubicada en el condominio las Delicias, tiene una extensión territorial de 1000 &#x33A1; con una construcción de 216 &#x33A1; y cuenta con lo siguiente:</p>
             <table class="q-mt-md">
               <tr>
@@ -32,13 +32,14 @@
             </table>
             <hr class="hr-custom q-ma-md">
             <p>Contactenos para mas detalles: <br>
+            <br>
              +57 3108420754 <br>
              +57 3137179764<br>
              +44 795715676
             </p>
           </div>
         </div>
-        <div class="col-12 col-sm-8 carousel">
+        <div class="col-12 col-md-8 carousel">
           <Carousel>
             <q-carousel-slide :name="1" img-src="/statics/images/fincas/palmira/1/image1.jpeg" />
             <q-carousel-slide :name="2" img-src="/statics/images/fincas/palmira/1/image2.jpeg" />
@@ -69,30 +70,41 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.inmuebles
-  margin-top 80px
-.custom-card
-  border-radius 8px
-  background #f5f8fa
-  box-shadow 0 0 10px rgba(0, 0, 0, 0.3)
-  padding 20px
-  margin-left 10px
-  margin-right 10px
-.titulo
-  text-align: center
-  margin-bottom 70px
-p, .fa-check
-  margin 0
-  font-size 18px
-.fa-check
-  margin-right 10px
-@media (max-width: 500px)
-  .titulo
-    text-align: center
-    margin-bottom 50px
-  .carousel
-    margin-top 30px
-    width 100%
+  <style lang="stylus" scoped>
+    .inmuebles
+      margin-top 50px
+      margin-left 40px
+      margin-right 40px
+    .custom-card
+      border-radius 8px
+      background #f5f8fa
+      box-shadow 0 0 10px rgba(0, 0, 0, 0.3)
+      padding 20px
+      margin-left 10px
+      margin-right 10px
+    .titulo
+      text-align: center
+      margin-bottom 70px
+    p, .fa-check
+      margin 0
+      font-size 18px
+    .fa-check
+      margin-right 10px
 
-</style>
+    @media (max-width: 600px)
+      .titulo
+        text-align: center
+        margin-top 50px
+        margin-bottom 50px
+
+      .custom-card
+        box-shadow 0 0 10px rgba(0, 0, 0, 0)
+        border-radius 0
+        margin-left 0
+        margin-right 0
+      .inmuebles
+        margin-left 0
+        margin-right 0
+        margin-top 0
+
+  </style>
