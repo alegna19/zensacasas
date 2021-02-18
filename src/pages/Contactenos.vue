@@ -23,7 +23,8 @@
             <q-input type="textarea" rows="3" v-model="message" name="message" standout="bg-primary text-white" label="Mensaje *" hint="* requerido" required/>
             <div class="text-center">
               <div style="width:300px; margin:0 auto">
-                <vue-recaptcha sitekey="402795e01d0c94d5a63b4535f313c9ac"></vue-recaptcha>
+                <!-- <vue-recaptcha sitekey="402795e01d0c94d5a63b4535f313c9ac"></vue-recaptcha> -->
+                <!-- TODO: implementar aqui hcaptcha -->
                 <br>
                 <q-btn label="Enviar" icon="fas fa-paper-plane" type="submit" color="primary" class="pageclip-form__submit"/>
               </div>
@@ -40,7 +41,7 @@
 
 <script>
 import emailjs from 'emailjs-com';
-import VueRecaptcha from 'vue-recaptcha';
+
 export default {
   data() {
     return {
