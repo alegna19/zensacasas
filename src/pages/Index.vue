@@ -100,7 +100,7 @@
           nuestros servicios, cubriendo las necesidades de nuestros clientes en su busqueda de su siguiente gran negocio.
         </p>
         <h5>Llamanos Ahora</h5>
-        <p><i class="las la-phon"></i>+57 3108420754 <br> +57 3137179764 <br> +44 7957156761</p>
+        <p>+57 3108420754 <br> +57 3137179764 <br> +44 7957156761</p>
       </div>
       <div class="col-12 col-sm-6 text-center image-nosotros">
         <img src="~assets/images/nosotros.jpg" alt="negocio">
@@ -268,7 +268,7 @@ export default {
       padding-left 50px
       background-color rgba(0,0,0, 0.4)
       margin-left -15px
-    h4
+    h4, h5
       font-size 20px
     p
       font-size 18px

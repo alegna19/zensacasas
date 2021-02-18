@@ -33,7 +33,7 @@
             <hr class="hr-custom q-ma-md">
             <p>Contactenos para mas detalles: <br>
             <br>
-             +57 3108420754 <br>
+             +57 3108420754<br>
              +57 3137179764<br>
              +44 795715676
             </p>
@@ -157,6 +157,7 @@ export default {
         text-align: center
         margin-top 50px
         margin-bottom 50px
+        font-size 34px
       .custom-card
         box-shadow 0 0 10px rgba(0, 0, 0, 0)
         border-radius 0
@@ -166,5 +167,4 @@ export default {
         margin-left 0
         margin-right 0
         margin-top 0
-
   </style>

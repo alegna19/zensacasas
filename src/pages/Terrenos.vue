@@ -89,4 +89,19 @@ p, .fa-check
   margin-right 10px
 .la-exclamation-circle
   font-size 120px
+@media (max-width: 600px)
+  .titulo
+    text-align: center
+    margin-top 50px
+    margin-bottom 50px
+    font-size 34px
+  .custom-card
+    box-shadow 0 0 10px rgba(0, 0, 0, 0)
+    border-radius 0
+    margin-left 0
+    margin-right 0
+  .inmuebles
+    margin-left 0
+    margin-right 0
+    margin-top 0
 </style>

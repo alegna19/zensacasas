@@ -88,7 +88,7 @@ export default {
         text-align: center
         margin-top 50px
         margin-bottom 50px
-
+        font-size 34px
       .custom-card
         box-shadow 0 0 10px rgba(0, 0, 0, 0)
         border-radius 0
