@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="countainer"></div>
+    <div class="container"></div>
     <div class="inmuebles">
       <h3 class="titulo">Fincas en Venta</h3>
       <div class="row">

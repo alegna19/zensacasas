@@ -28,9 +28,6 @@
                 <br>
                 <q-btn label="Enviar" icon="fas fa-paper-plane" type="submit" color="primary" class="pageclip-form__submit"/>
               </div>
-              <!-- <span class="rta" :class="{'bg-positive': rta === 1,'bg-negative': rta === 2}">
-                {{ note }}
-              </span> -->
             </div>
           </q-form>
         </div>
@@ -104,14 +101,6 @@ export default {
   .notifyc
     font-size 24px
     margin-bottom 20px
-  .bg-positive
-    background-color green
-    padding 14px
-    border-radius 8px
-  .bg-negative
-    background-color red
-    padding 14px
-    border-radius 8px
   @media (max-width: 600px)
     .telefonos
       font-size 18px

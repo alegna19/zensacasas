@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="countainer"></div>
+    <div class="container"></div>
     <div class="q-ma-xl inmuebles">
       <h3 class="titulo">Terrenos en Venta</h3>
       <div class="row">
