@@ -45,6 +45,13 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Contactenos.vue') }
     ]
+  },
+  {
+    path: '/privacidad',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Politica.vue') }
+    ]
   }
 ]
 

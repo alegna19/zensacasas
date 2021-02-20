@@ -189,7 +189,7 @@
               <h4 class="text-white small-margin">&copy; Zensacasas</h4>
               <p class="text-white">{{year.getFullYear()}} Todos los derechos reservados <br>
               </p>
-              <router-link to="/privacy"><p class="text-white"><u>Politica de Privacidad</u></p></router-link>
+              <router-link to="/privacidad"><p class="text-white"><u>Politica de Privacidad</u></p></router-link>
               <h6 class="text-white small-margin">Siguenos en</h6>
               <a href="https://twitter.com/cantinazosRG1" target="_blank" class="q-pr-md"><i class="fab fa-twitter fa-3x text-white"></i></a>
               <a href="https://www.instagram.com/ceneliar2014" target="_blank"><i class="fab fa-instagram fa-3x text-white"></i></a>
